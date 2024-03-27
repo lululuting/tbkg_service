@@ -1,11 +1,13 @@
-// This file is created by egg-ts-helper@1.25.8
+// This file is created by egg-ts-helper@1.30.2
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportAdminAuth = require('../../../app/middleware/adminAuth');
+import ExportIsAuth = require('../../../app/middleware/isAuth');
+import ExportMsgFormat = require('../../../app/middleware/msgFormat');
 
 declare module 'egg' {
   interface IMiddleware {
-    adminAuth: typeof ExportAdminAuth;
+    isAuth: typeof ExportIsAuth;
+    msgFormat: typeof ExportMsgFormat;
   }
 }

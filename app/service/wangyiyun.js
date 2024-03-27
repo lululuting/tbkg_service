@@ -1,59 +1,77 @@
 /*
  * @Author: your name
  * @Date: 2021-01-11 10:10:51
- * @LastEditTime: 2021-01-11 10:44:05
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-23 17:32:26
+ * @LastEditors: TingGe
  * @Description: In User Settings Edit
  * @FilePath: /tingge_blog_zhongtai/app/service/wangyiyun.js
  */
+'use strict';
 const Service = require('egg').Service;
 
 class Musicervice extends Service {
+
   async getMusicList(oId) {
-    const res1 = await this.ctx.curl(`https://v1.hitokoto.cn/nm/playlist/${oId}`,{
+
+    const res1 = await this.ctx.curl(
+      `https://api.imjad.cn/cloudmusic/?type=playlist&id=${oId}`,
+      {
         dataType: 'json',
         method: 'GET',
         data: {},
-    })
+      }
+    );
 
     if (!res1.data || res1.data.code !== 200) {
-        // message.success('歌单id有误或网易云接口出错！')
-        return
+      return;
     }
 
-    let ids = [];
-    res1.data && res1.data.privileges && res1.data.privileges.map((item, index) => {
+    const ids = [];
+    res1.data &&
+      res1.data.privileges &&
+      // eslint-disable-next-line array-callback-return
+      res1.data.privileges.map((item, index) => {
         // 最多20条
         if (index + 1 <= 20) {
-            ids.push(item.id);
+          ids.push(item.id);
         }
-    });
+      });
 
-    const res2 = await this.ctx.curl(`https://v1.hitokoto.cn/nm/summary/${ids.join(',')}`,{
+    const res2 = await this.ctx.curl(
+      `http://netease.1211210.xyz/song/detail?ids=${ids.join(',')}`,
+      {
         dataType: 'json',
         method: 'GET',
-        data: {
-            lyric: true,
-            common: true
-        }
-    })
+      }
+    );
 
-    var songs = [];
-    res2.data && res2.data.songs && res2.data.songs.map(function (song) {
-        // 修复有时候第三方的接口失灵导致播放器出错 
-        if (song.url[0] !== 'h') {
-            song.url = 'https://v1.hitokoto.cn' + song.url
+    const res3 = await this.ctx.curl(
+      `http://netease.1211210.xyz/song/url?id=${ids.join(',')}`,
+      {
+        dataType: 'json',
+        method: 'GET',
+      }
+    );
+
+    const songs = [];
+    const urlArr = res3.data && res3.data.data || [];
+    const detailArr = res2.data && res2.data.songs || [];
+
+    for (let i = 0; i < urlArr.length; i++) {
+      for (let j = 0; i < detailArr.length; j++) {
+        if (urlArr[i].id === detailArr[j].id) {
+          songs.push({
+            name: detailArr[j].name,
+            url: urlArr[i].url,
+            artist: detailArr[j].ar[0].name,
+            pic: detailArr[j].al.picUrl,
+            // album: song.album.name, //专辑 没吊用 不需要
+            // lrc: song.lyric.translate || song.lyric.base, // 歌词不需要
+          });
+          break;
         }
-        songs.push({
-            name: song.name,
-            url: song.url,
-            artist: song.artists.join('/'),
-            album: song.album.name,
-            pic: song.album.picture,
-            lrc: song.lyric.translate || song.lyric.base
-        });
-    });
-    
+      }
+    }
     return songs;
   }
 }

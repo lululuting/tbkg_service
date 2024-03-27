@@ -1,0 +1,826 @@
+[
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getHomeBannerList",
+    "regexp": "/^\\/default\\/getHomeBannerList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getListBanner",
+    "regexp": "/^\\/default\\/getListBanner(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getDetailBanner",
+    "regexp": "/^\\/default\\/getDetailBanner(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getSearchBanner",
+    "regexp": "/^\\/default\\/getSearchBanner(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getAdvertList",
+    "regexp": "/^\\/default\\/getAdvertList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/readingVolume",
+    "regexp": "/^\\/default\\/readingVolume(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getRewardCode",
+    "regexp": "/^\\/default\\/getRewardCode(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/feedback",
+    "regexp": "/^\\/default\\/feedback(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getSearchList",
+    "regexp": "/^\\/default\\/getSearchList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getUserArticleList",
+    "regexp": "/^\\/default\\/getUserArticleList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getHotUserList",
+    "regexp": "/^\\/default\\/getHotUserList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/login",
+    "regexp": "/^\\/default\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/logOut",
+    "regexp": "/^\\/default\\/logOut(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getIsLogin",
+    "regexp": "/^\\/default\\/getIsLogin(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getWeiboUserInfo",
+    "regexp": "/^\\/default\\/getWeiboUserInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getMsg",
+    "regexp": "/^\\/default\\/getMsg(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getMsgList",
+    "regexp": "/^\\/default\\/getMsgList(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/setFollow",
+    "regexp": "/^\\/default\\/setFollow(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getUserInfo",
+    "regexp": "/^\\/default\\/getUserInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/updateUserInfo",
+    "regexp": "/^\\/default\\/updateUserInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/updatePassword",
+    "regexp": "/^\\/default\\/updatePassword(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/updateMobile",
+    "regexp": "/^\\/default\\/updateMobile(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/updateSongs",
+    "regexp": "/^\\/default\\/updateSongs(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/passwordTest",
+    "regexp": "/^\\/default\\/passwordTest(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getFollowList",
+    "regexp": "/^\\/default\\/getFollowList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getFansList",
+    "regexp": "/^\\/default\\/getFansList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getUserList",
+    "regexp": "/^\\/default\\/getUserList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/addEditUser",
+    "regexp": "/^\\/default\\/addEditUser(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/delUser",
+    "regexp": "/^\\/default\\/delUser(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/frozenUser",
+    "regexp": "/^\\/default\\/frozenUser(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/thawUser",
+    "regexp": "/^\\/default\\/thawUser(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/resetPassword",
+    "regexp": "/^\\/default\\/resetPassword(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getArticleList",
+    "regexp": "/^\\/default\\/getArticleList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getArticleInfo",
+    "regexp": "/^\\/default\\/getArticleInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getArticleDetail",
+    "regexp": "/^\\/default\\/getArticleDetail(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getArticleComment",
+    "regexp": "/^\\/default\\/getArticleComment(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/setArticleComment",
+    "regexp": "/^\\/default\\/setArticleComment(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/commentClickLike",
+    "regexp": "/^\\/default\\/commentClickLike(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/articleClickLike",
+    "regexp": "/^\\/default\\/articleClickLike(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getLikeStatus",
+    "regexp": "/^\\/default\\/getLikeStatus(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getVerify",
+    "regexp": "/^\\/default\\/getVerify(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getUserArticleTotal",
+    "regexp": "/^\\/default\\/getUserArticleTotal(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/addEditArticle",
+    "regexp": "/^\\/default\\/addEditArticle(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/delArticle",
+    "regexp": "/^\\/default\\/delArticle(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/frozenArticle",
+    "regexp": "/^\\/default\\/frozenArticle(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/thawArticle",
+    "regexp": "/^\\/default\\/thawArticle(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getCommentList",
+    "regexp": "/^\\/default\\/getCommentList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/delComment",
+    "regexp": "/^\\/default\\/delComment(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/frozenComment",
+    "regexp": "/^\\/default\\/frozenComment(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/thawComment",
+    "regexp": "/^\\/default\\/thawComment(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getBannerList",
+    "regexp": "/^\\/default\\/getBannerList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/delBanner",
+    "regexp": "/^\\/default\\/delBanner(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/addEditBanner",
+    "regexp": "/^\\/default\\/addEditBanner(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/notice",
+    "regexp": "/^\\/default\\/notice(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getNoticeList",
+    "regexp": "/^\\/default\\/getNoticeList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/addEditNotice",
+    "regexp": "/^\\/default\\/addEditNotice(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/delNotice",
+    "regexp": "/^\\/default\\/delNotice(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getFunctionList",
+    "regexp": "/^\\/default\\/getFunctionList(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/default/setFunction",
+    "regexp": "/^\\/default\\/setFunction(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getQiniuToken",
+    "regexp": "/^\\/default\\/getQiniuToken(?:\\/(?=$))?$/",
+    "stack": [
+      "isAuth",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getWeather",
+    "regexp": "/^\\/default\\/getWeather(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getMusicList",
+    "regexp": "/^\\/default\\/getMusicList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/default/getYitu",
+    "regexp": "/^\\/default\\/getYitu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]

@@ -1,38 +1,34 @@
 /*
- * @Date: 2020-01-13 21:30:54
+* 基本类BaseController，公共方法类，继承egg的 Controller, 然后其他Controller继承 BaseController
+* @Date: 2020-01-13 21:30:54
  * @LastEditors: TingGe
- * @LastEditTime: 2021-03-21 16:16:21
+ * @LastEditTime: 2022-05-04 04:49:44
  * @FilePath: /tingge_blog_zhongtai/app/controller/public/BaseController.js
- */
+*/
 'use strict';
 
-//node.js 文件操作对象
 const fs = require('fs');
-//node.js 路径操作对象
 const path = require('path');
-//egg.js Controller
 const Controller = require('egg').Controller;
-//故名思意 异步二进制 写入流
 const awaitWriteStream = require('await-stream-ready').write;
-//管道读入一个虫洞。
 const sendToWormhole = require('stream-wormhole');
-
 const dayjs = require('dayjs');
-
-// utlity md5 方法
-const utility = require('utility');
-
-const config = require('../../../config/publicConfig.js');
-
-
-// 基本类BaseController，公共方法类，继承egg的 Controller, 然后其他Controller继承 BaseController
-
+const utility = require('utility'); // utlity md5 方法
+const config = require('../../../config/publicConfig');
+const dict = require('../../public/dict');
 
 class BaseController extends Controller {
-  // 2020/3/8 已采用七牛云  此本地上传文件方法 uploadFile弃用，但不删留作参考，不调用就是了
+  constructor(props) {
+    super(props);
+    // 基本配置和一些字典
+    this.baseConfig = config;
+    this.dict = dict;
+  }
+
+  // 本地上传文件方法， 2020/3/8 已采用七牛云 此方法弃用。不删留作参考，不调用就是了。
   async uploadFile(category = '') {
     const ctx = this.ctx;
-    //egg-multipart 已经帮我们处理文件二进制对象
+    // egg-multipart 已经帮我们处理文件二进制对象
     const stream = await ctx.getFileStream();
 
     // 基础的目录
@@ -47,12 +43,12 @@ class BaseController extends Controller {
     function mkdirsSync(dirname) {
       if (fs.existsSync(dirname)) {
         return true;
-      } else {
-        if (mkdirsSync(path.dirname(dirname))) {
-          fs.mkdirSync(dirname);
-          return true;
-        }
       }
+      if (mkdirsSync(path.dirname(dirname))) {
+        fs.mkdirSync(dirname);
+        return true;
+      }
+
     }
 
     mkdirsSync(path.join(uplaodBasePath, category, dirname));
@@ -60,61 +56,91 @@ class BaseController extends Controller {
     // 生成写入路径
     const target = path.join(uplaodBasePath, category, dirname, filename);
 
-    //生成一个文件写入 文件流
+    // 生成一个文件写入 文件流
     const writeStream = fs.createWriteStream(target);
 
     try {
-      //异步把文件流 写入
+      // 异步把文件流 写入
       await awaitWriteStream(stream.pipe(writeStream));
     } catch (err) {
-      //如果出现错误，关闭管道
+      // 如果出现错误，关闭管道
       await sendToWormhole(stream);
       throw err;
     }
 
-    const host = 'http://' + ctx.request.header.host
+    const host = 'http://' + ctx.request.header.host;
 
     return {
-      url: host + path.join('/public/uploads', category, dirname, filename).replace(/\\/g, "/")
-    }
+      url: host + path.join('/public/uploads', category, dirname, filename).replace(/\\/g, '/'),
+    };
   }
 
-
-  // 信息通知方法
-  /* tmp {type: 类型，1评论/回复评论  2点赞文章 3点赞评论 4粉丝关注 5系统通知}
-   *  tmp {userId: 发起的用户id}
-   *  tmp {content: 内容}
-   *  tmp {callUserId: 通知的用户id}
-   *  tmp {source: 出处 文章id 或者 评论id ，数据库为int型默认为0，选填}
-   */
-  async setMsg(tmp) {
-    if (tmp.userId == tmp.callUserId) return // 自己就不用给自己发消息了
-    await this.app.mysql.insert('msg', tmp)
-  }
-
-
-  //return toke token记录当前登录用户的信息
   /*
-   * sign({根据什么生成token})
-   * app.config.jwt.secret 配置的密钥
-   * {expiresIn:'24h'} 过期时间
-   */
-  async returnToken(userInfo) {
-    let token = this.app.jwt.sign({
-      userId: userInfo.id,
-      userName: userInfo.userName,
-      mobile: userInfo.mobile,
-      auth: userInfo.auth
-    }, `${config.tokenKey}`, {
-      expiresIn: '24h'
-    })
-    return token
+  * 信息通知方法
+  * tmp {type: 类型，1评论/回复评论  2点赞文章 3点赞评论 4粉丝关注 5系统通知}
+  * tmp {userId: 发起的用户id}
+  * tmp {content: 内容}
+  * tmp {callUserId: 通知的用户id}
+  * tmp {source: 出处 文章id 或者 评论id ，数据库为int型默认为0，选填}
+  */
+  async setMsg(tmp) {
+    if (tmp.userId === tmp.callUserId) return; // 自己就不用给自己发消息了
+    await this.app.mysql.insert('msg', tmp);
   }
 
-  // token获取当前登录用户的信息
-  async getTokenInfo() {
-    return await this.ctx.app.jwt.verify(this.ctx.request.header.authorization.split(' ')[1], this.config.jwt.secret)
+  /* return toke token记录当前登录用户的信息
+  * sign({根据什么生成token})
+  * app.config.jwt.secret 配置的密钥
+  * {expiresIn:'24h'} 过期时间 要与redis一致
+  */
+  async returnToken(userInfo) {
+    const token = this.app.jwt.sign({
+      ...userInfo,
+    }, `${config.tokenKey}`, {
+      expiresIn: '24h',
+    });
+    return token;
   }
+
+  // token获取当前登录用户的信息 没有返回null
+  async getTokenInfo(token) {
+    const tokenStr = token || this.ctx.cookies.get('token');
+    if (tokenStr) {
+      return await this.ctx.app.jwt.verify(tokenStr, this.config.jwt.secret);
+    }
+    return null;
+  }
+
+  // 判断是否超管
+  async isSuper(returnErr = true, msg = '无权操作！') {
+    const userInfo = await this.getTokenInfo();
+    if (!userInfo || userInfo.auth * 1 !== config.auth.super) {
+      if (returnErr) {
+        this.ctx.body = {
+          code: 500,
+          msg,
+        };
+      }
+      return false;
+    }
+    return userInfo;
+  }
+
+  /*
+  * 粗略的接口缓存 redis 包装
+  * queryFnc mysql的异步查询方法
+  * key redis存的key
+  * seconds 缓存时间 秒
+  */
+  async setRedisInfo({ queryFnc, key, seconds }) {
+    let result = await this.service.redis.get(key);
+    if (!key) {
+      result = await queryFnc();
+      this.service.redis.set(key, result, seconds);
+    }
+    return result;
+  }
+
 }
 
 module.exports = BaseController;

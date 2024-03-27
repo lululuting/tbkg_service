@@ -1,109 +1,112 @@
 /*
  * @Author: your name
  * @Date: 2020-09-09 00:22:39
- * @LastEditTime: 2021-03-21 17:34:35
+ * @LastEditTime: 2021-09-01 11:20:33
  * @LastEditors: TingGe
- * @Description: 天气相关接口
- * @FilePath: /github项目/tbkg-service/app/service/weather.js
+ * @Description: In User Settings Edit
+ * @FilePath: /tingge_blog_zhongtai/app/service/weather.js
  */
+'use strict';
 const Service = require('egg').Service;
 
+// 自行配置 和风天气 key
+const keys = {
+  prod: {
+    url: 'https://api.heweather.net',
+    key: 'xxxx',
+  },
+  dev: {
+    url: 'https://devapi.heweather.net',
+    key: 'xxxx',
+  },
+};
+
 class WeatherService extends Service {
-    async getWeather(params) {
-        params.key = 'xxxxxx' // 和风天气key 自行申请
-
-        let date = new Date();
-        let year = date.getFullYear();
-        let month = date.getMonth() + 1;
-        let day = date.getDate();
-        if (month < 10) {
-            month = "0" + month;
-        }
-        if (day < 10) {
-            day = "0" + day;
-        }
-        const nowDate = year + "" + month + "" + day;
-
-
-        const res1 = await this.ctx.curl(`https://devapi.heweather.net/v7/weather/now`, {
-            dataType: 'json',
-            method: 'GET',
-            data: params
-        })
-
-        const res2 = await this.ctx.curl(`https://devapi.heweather.net/v7/weather/24h`, {
-            dataType: 'json',
-            method: 'GET',
-            data: params
-        })
-
-        const res3 = await this.ctx.curl(`https://devapi.heweather.net/v7/weather/7d`, {
-            dataType: 'json',
-            method: 'GET',
-            data: params
-        })
-
-        const res4 = await this.ctx.curl(`https://devapi.heweather.net/v7/astronomy/sunmoon`, {
-            dataType: 'json',
-            method: 'GET',
-            data: {
-                ...params,
-                date: nowDate
-            }
-        })
-
-        const res5 = await this.ctx.curl(`https://devapi.heweather.net/v7/minutely/5m`, {
-            dataType: 'json',
-            method: 'GET',
-            data: params,
-        })
-
-
-        const res6 = await this.ctx.curl(`https://devapi.heweather.net/v7/warning/now`, {
-            dataType: 'json',
-            method: 'GET',
-            data: params,
-        })
-
-
-
-        let {
-            now,
-            updateTime
-        } = res1.data;
-        let {
-            hourly
-        } = res2.data;
-        let {
-            daily
-        } = res3.data;
-        let {
-            sunrise,
-            sunset
-        } = res4.data;
-        let {
-            summary
-        } = res5.data;
-        let {
-            warning
-        } = res6.data;
-
-
-        const res = {
-            now,
-            updateTime,
-            hourly,
-            daily,
-            sunmoon: {
-                sunrise,
-                sunset
-            },
-            summary,
-            warning
-        }
-
-        return res;
+  async getWeather(params) {
+    let serviceType;
+    const isBaipiao = true; // 是否白嫖
+    if (!isBaipiao) {
+      serviceType = keys.prod;
+    } else {
+      serviceType = keys.dev;
     }
+    params.key = serviceType.key;
+
+    const date = new Date();
+    const year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    if (month < 10) {
+      month = '0' + month;
+    }
+    if (day < 10) {
+      day = '0' + day;
+    }
+    const nowDate = year + '' + month + '' + day;
+
+    const res1 = await this.ctx.curl(`${serviceType.url}/v7/weather/now`, {
+      dataType: 'json',
+      method: 'GET',
+      data: params,
+    });
+
+    const res2 = await this.ctx.curl(`${serviceType.url}/v7/weather/24h`, {
+      dataType: 'json',
+      method: 'GET',
+      data: params,
+    });
+
+    const res3 = await this.ctx.curl(`${serviceType.url}/v7/weather/7d`, {
+      dataType: 'json',
+      method: 'GET',
+      data: params,
+    });
+
+    const res4 = await this.ctx.curl(`${serviceType.url}/v7/astronomy/sunmoon`, {
+      dataType: 'json',
+      method: 'GET',
+      data: {
+        ...params,
+        date: nowDate,
+      },
+    });
+
+    const res5 = await this.ctx.curl(`${serviceType.url}/v7/minutely/5m`, {
+      dataType: 'json',
+      method: 'GET',
+      data: params,
+    });
+
+
+    const res6 = await this.ctx.curl(`${serviceType.url}/v7/warning/now`, {
+      dataType: 'json',
+      method: 'GET',
+      data: params,
+    });
+
+
+    const { now, updateTime } = res1.data;
+    const { hourly } = res2.data;
+    const { daily } = res3.data;
+    const { sunrise, sunset } = res4.data;
+    const { summary } = res5.data;
+    const { warning } = res6.data;
+
+    const res = {
+      now,
+      updateTime,
+      hourly,
+      daily,
+      sunmoon: {
+        sunrise,
+        sunset,
+      },
+      summary,
+      warning,
+    };
+
+    return res;
+  }
 }
 
 module.exports = WeatherService;

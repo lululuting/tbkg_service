@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.8
+// This file is created by egg-ts-helper@1.30.2
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -17,6 +17,8 @@ import 'egg-view';
 import 'egg-mysql';
 import 'egg-cors';
 import 'egg-jwt';
+import 'egg-redis';
+import 'egg-sequelize';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -35,5 +37,7 @@ declare module 'egg' {
     mysql?: EggPluginItem;
     cors?: EggPluginItem;
     jwt?: EggPluginItem;
+    redis?: EggPluginItem;
+    sequelize?: EggPluginItem;
   }
 }

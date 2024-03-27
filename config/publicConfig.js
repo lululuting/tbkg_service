@@ -1,13 +1,15 @@
-/*
- * @Author: your name
- * @Date: 2021-01-03 23:35:38
- * @LastEditTime: 2021-03-21 17:32:57
- * @LastEditors: TingGe
- * @Description: In User Settings Edit
- * @FilePath: /github项目/tbkg-service/config/publicConfig.js
- */
-
+'use strict';
 
 module.exports = {
-    tokenKey: "token密钥token密钥", // token 密钥
-}
+  tokenKey: "xxxxxx", // token 密钥
+  map: {
+    ak: 'xxxx',
+    coor: 'xxxx',
+  },
+  // 1普通博主 2超级管理员 3普通用户
+  auth: {
+    user: 3,
+    blogger: 1,
+    super: 2,
+  },
+};

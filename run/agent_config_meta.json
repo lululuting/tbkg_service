@@ -1,0 +1,371 @@
+{
+  "keys": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+  "middleware": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+  "jwt": {
+    "secret": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-jwt/config/config.default.js"
+  },
+  "bodyParser": {
+    "jsonLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "formLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "strict": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "depth": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "multipart": {
+    "fileSize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "mode": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "fileExtensions": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "autoFields": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+      "ignoreJSON": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+      "type": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "protocolWhiteList": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "cors": {
+    "credentials": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+    "allowMethods": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js"
+  },
+  "redis": {
+    "client": {
+      "port": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+      "host": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+      "password": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+      "db": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js"
+    },
+    "default": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-redis/config/config.default.js",
+    "app": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-redis/config/config.default.js",
+    "agent": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-redis/config/config.default.js",
+    "supportTimeCommand": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-redis/config/config.default.js"
+  },
+  "proxy": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+  "myAppName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.default.js",
+  "mysql": {
+    "client": {
+      "host": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "port": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "user": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "password": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "database": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js"
+    },
+    "app": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "agent": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "default": {
+      "database": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-mysql/config/config.default.js"
+    }
+  },
+  "sequelize": {
+    "dialect": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "host": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "port": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "database": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "username": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "password": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "define": {
+      "timestamps": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "paranoid": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "freezeTableName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "underscored": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js"
+    },
+    "timezone": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+    "dialectOptions": {
+      "dateStrings": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js",
+      "typeCast": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/config/config.local.js"
+    }
+  },
+  "session": {
+    "maxAge": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-schedule/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "name": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "version": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "description": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "private": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "await-stream-ready": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "bcryptjs": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "dayjs": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-jwt": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-redis": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "m-ssh-deploy": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "mobile-detect": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "node-device-detector": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "qiniu": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "svg-captcha": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "utility": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "stop": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "dev": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "debug": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "test": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "cov": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "lint": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "ci": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "autod": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "deploy": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "model": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "url": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "license": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "env": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "level": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "logging": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "port": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/shejishidediannao/Desktop/myProject/tingge_blog_zhongtai/node_modules/egg/config/config.default.js"
+}
